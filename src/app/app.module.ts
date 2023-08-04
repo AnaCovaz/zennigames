@@ -3,14 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { WelcomeDialogComponent } from "./welcome-dialog/welcome-dialog.component";
+import { TypingAnimationModule } from "./welcome-dialog/welcome-dialog-typing/typing-animation.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, WelcomeDialogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TypingAnimationModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
